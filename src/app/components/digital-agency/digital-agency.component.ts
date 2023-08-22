@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./digital-agency.component.scss']
 })
 export class DigitalAgencyComponent {
-
+  activeTab = 1;
+  images =['1.png','2.jpg','3.jpg'];
 }

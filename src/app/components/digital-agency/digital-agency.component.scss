@@ -16,3 +16,27 @@
 .description{
     margin: 2rem 0rem 0rem 6rem;
 }
+.corosal{
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #003ADB;
+    cursor: pointer;
+    border-right: 3px solid #0B0F15
+}
+.corosal-active{
+    background-color: white !important;
+}
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+.left-text, .right-text {
+    flex: 1;
+    text-align: center;
+}
