@@ -3,17 +3,32 @@
         <div class="container">
             <h1 class="title-content">WE ARE</h1>
             <h1 class="title-content2">DIGITAL AGENCY</h1>
-            
+
             <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Blandit id fringilla turpis tempor enim. Vel tristique suspendisse eget sodales egestas. 
-                Donec duis lacus, odio velit eu eget ac tortor. Ac sit ultricies hendrerit pellentesque 
-                arcu fames sit lectus. Scelerisque id bibendum velit cras. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Blandit id fringilla turpis tempor enim. Vel tristique suspendisse eget sodales egestas.
+                Donec duis lacus, odio velit eu eget ac tortor. Ac sit ultricies hendrerit pellentesque
+                arcu fames sit lectus. Scelerisque id bibendum velit cras.
             </p>
             <button class="btn btn-primary description">Learn more</button>
         </div>
+        <br>
+        <div class="table-container">
+            <span class="left-text">01</span>
+            <table class="corosal-table">
+                <tr class="corosal-tr">
+                    <td class="corosal" [ngClass]="{'corosal-active': activeTab == 1}"
+                        (click)="activeTab = 1"></td>
+                    <td class="corosal" [ngClass]="{'corosal-active': activeTab == 2}"
+                        (click)="activeTab = 2"></td>
+                    <td class="corosal" [ngClass]="{'corosal-active': activeTab == 3}"
+                        (click)="activeTab = 3"></td>
+                </tr>
+            </table>
+            <span class="right-text">03</span>
+        </div>
     </div>
     <div class="col-md-6">
-        <img src="assets/images/cherrydeck.png" alt="cherrydeck" style="width:50vw;">
+        <img src="assets/images/digital-team/{{images[activeTab-1]}}" alt="cherrydeck" style="width:50vw;">
     </div>
 </div>
